@@ -1,8 +1,19 @@
-const myList = document.getElementById("myList");
+const myList = document.getElementById('myList');
 
 // New List Item <li>Banana</li>
 
-let newlistItem = document.createElement('li');
-newlistItem.textContent = 'Banana';
+let newListItem = document.createElement('li');
+newListItem.textContent = 'Banana';
 
-myList.appendChild(newlistItem);
+myList.appendChild(newListItem);
+
+
+
+const fruitList = ['banana', 'Orange', 'Mango', 'Lemon'];
+
+for (let fruit of fruitList) {
+    let newListItem = document.createElement('li'); 
+    newListItem.textContent = fruit;
+
+    myList.appendChild(newListItem);
+}
