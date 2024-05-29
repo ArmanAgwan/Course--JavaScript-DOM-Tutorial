@@ -51,12 +51,12 @@
             padding: 5px;
         }
 
-        div{
+        /* div{
             padding: 20px;
             font-weight: bold;
             color: white;
             background-color: red;
-        }
+        } */
 
         #dom {
            font-style: italic;
@@ -76,17 +76,44 @@
     </ul> */
 /* } */
 
+.progress-bar {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    border: 1px, solid #000;
+}
 
+.progress-bar-fill {
+    height:100%;
+    background: #59ea63;
+    transition: width 0.5s;
+
+}
+
+.progress-bar-value {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
     </style>
 </head>
 <body>
-    <h2>New Heading</h2>
+    <!-- <h2>New Heading</h2>
 <h2 id="title">Element.outerHTML - JS DOM - dcode</h2>
 <div id="container1">
     <div class="box">Container 1 - Box 1</div>
 </div>
 <div id="container2">
     <div class="box">Container 2 - Box 2</div>
+</div> -->
+
+<div class="progress-bar">
+    <div class="progress-bar-value">65%</div>
+    <div class="progress-bar-fill"></div>
 </div>
 
 
@@ -127,6 +154,7 @@
     <!-- <script src="./11-Get_BoundingClient.js"></script> -->
     <!-- <script src="./12-Outer_HTML.js"></script> -->
     <!-- <script src="./13-Query_Selector.js"></script> -->
-    <script src="./14-Query_SelectorAll.js"></script>
+    <!-- <script src="./14-Query_SelectorAll.js"></script> -->
+    <script src="./15-Progress_Bar.js"></script>
 </body>
 </html>
