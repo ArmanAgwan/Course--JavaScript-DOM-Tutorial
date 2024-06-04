@@ -111,6 +111,21 @@
     margin-bottom: 10px;
     padding: 25px;
 }
+
+.outer {
+    width:200px;
+    height:120px;
+    background: #aaaaaa;
+    padding: 20px;
+}
+
+.inner {
+    width: 80px;
+    height: 80px;
+    background: #009578;
+    border:2px solid #ffffff;
+    pointer-events: none;
+}
     </style>
 </head>
 <body>
@@ -223,7 +238,7 @@
 
 
 
-    <h1><code>replaceWith()</code></h1>
+    <!-- <h1><code>replaceWith()</code></h1>
     <ul class="summary">
         <li>Let's you easily replace a node with other nodes</li>
         <li>Natively supported on modern browser (except IE)</li>
@@ -231,6 +246,32 @@
 
     <div id="example">
         <p>Sample Text</p>
+    </div> -->
+
+
+
+    <!-- <h1><code>isequalNode()</code>method</h1>
+    <ul class="tsummary summary--with-divider">
+        <li>Tests if two nodes (elements) are equal</li>
+        <li>Includes child nodes in test</li>
+    </ul>
+
+    <div class="test">
+        <strong>Test #1</strong>
+    </div>
+    <div class="test">
+        <strong>Test #2</strong>
+    </div> -->
+
+
+
+    <h1><code>elementFromPoint()</code>method</h1>
+    <ul class="tsummary summary--with-divider"></ul>
+    <li>Allows you to find the top-most element given an(x,y)</li>
+    <li>can apply probably come in hamdy when trying to work</li>
+
+    <div class="outer">
+        <div class="inner"></div>
     </div>
 
     <!-- <script src="./01-Document.createElement.js"></script> -->
@@ -258,6 +299,8 @@
     <!-- <script src="./25-Event_Delegation.js"></script> -->
     <!-- <script src="./26-Replace_Child.js"></script> -->
     <!-- <script src="./27-Append_Multiple.js"></script> -->
-    <script src="./28-Replace_With.js"></script>
+    <!-- <script src="./28-Replace_With.js"></script> -->
+    <!-- <script src="./29-Equal_Node.js"></script> -->
+    <script src="./30-Element_Point.js"></script>
 </body>
 </html>
